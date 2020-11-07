@@ -1,0 +1,31 @@
+section.gallery {
+  div.gallery-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    a {
+      width: 45%;
+      transition: .3s;
+      &:active {
+        color: transparent;
+        transform: scale(1.4);
+      }
+    }
+    img {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  section.gallery {
+    div.gallery-wrapper {
+      a {
+        width: 22%
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+#phonebtn {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+  text-decoration: none;
+  width: 60%;
+  line-height: 200%;
+  font-weight: bold;
+  font-size: 3.5vh;
+  text-align: center;
+  padding: 3px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(30, 207, 7);
+  animation: 4s 3s shakebtn infinite both;
+  box-shadow: 0 0 6px 2px black ;
+  transition: .7s;
+  i.fa-phone {
+    transform: rotate(115deg) translate(0, 0);
+    margin-right: 10px;
+  }
+}
+
+
+nav.main-nav {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba($color: #000000, $alpha: .85);
+  width: 70%;
+  height: 40%;
+  padding: 1vh;
+  border-radius: 10px;
+  transition: .7s;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    li {
+      color: white;
+      font-size: 3vh;
+      letter-spacing: 2px;
+      margin: 0 1.5vh;
+      background-color: rgba(0,0,0,.6);
+      padding: 1.2vh;
+      border-radius: 5px;
+      box-shadow: 0 0 8px 2px  rgba(0,0,0,.6);
+      transition: .3s;
+      &.active-li {
+        box-shadow: 0 0 8px 2px white;
+      }
+    }
+  }
+}
+
+@keyframes shakebtn {
+  0% {
+    transform: translate(-50%) rotate(0deg);
+  }
+
+  2% {
+    transform: translate(-50%) rotate(-2deg);
+  }
+
+  4% {
+    transform: translate(-50%) rotate(2deg);
+  }
+
+  6% {
+    transform: translate(-50%) rotate(-2deg);
+  }
+
+  8% {
+    transform: translate(-50%) rotate(2deg);
+  }
+
+  10% {
+    transform: translate(-50%) rotate(-2deg);
+  }
+
+  12% {
+    transform: translate(-50%) rotate(2deg);
+  }
+
+  14% {
+    transform: translate(-50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%) rotate(0deg);
+  }
+}
+
+@media (orientation: landscape) {
+  #phonebtn {
+    top: 40%;
+    font-size: 3vw;
+    width: 40%;
+  }
+
+  nav.main-nav {
+    top: 60%;
+    height: 20%;
+    width: 100%;
+    ul {
+      flex-direction: row;
+      align-items: center;
+      li {
+        font-size: 2.5vw;
+        letter-spacing: 2px;
+        padding: 2vw;
+      }
+    }
+  }
+}

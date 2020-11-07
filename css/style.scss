@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+.page {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  overflow: auto;
+  width: 100%;
+  padding: 0;
+  background-color: rgba(0, 0, 0, .9);
+  color: white;
+  // border: 1px solid black;
+}
+
+.active-page {
+  height: 70%;
+  padding: 5vh;
+}
+
+.close {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .9);
+  color: white;
+  transform: translate(-50%, -100%);
+  transition: .2s;
+}
+
+@keyframes btnmove {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 30%;
+  }
+}
+
+@media (orientation: landscape) {
+  .active-page {
+    height: 60%;
+    padding: 5vw;
+  }
+
+  .close {
+    top: 40%;
+  }
+
+  @keyframes btnmove {
+    from {
+      top: 100%;
+    }
+
+    to {
+      top: 40%;
+    }
+  }
+}
+
+@import "./baner";
+@import "./nav";
+@import "./footer";
+@import "./about-me";
+@import "./gallery";
+@import "./services";
+@import "./contact";
+@import "./open-hours";

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  text-align: center;
+  background-image: url(../imgs/baner/bg600por.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  div.hero {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .85);
+    color: white;
+    box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, .85);
+
+    h1 {
+      padding-top: 3vh;
+      text-transform: uppercase;
+      font-family: 'oswald', arial, sans-serif;
+      letter-spacing: 4px;
+      font-size: 6vh;
+    }
+
+    h2 {
+      font-size: 3vh;
+    }
+
+    h3 {
+      font-size: 2.5vh;
+      margin-top: 2vh;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &.gear1 {
+      height: 315px;
+      top: 82px;
+      left: -74px;
+      animation: rotate 15s infinite linear;
+    }
+
+    &.gear2 {
+      height: 315px;
+      top: 400px;
+      left: -180px;
+      animation: rotate 15s infinite linear;
+    }
+
+    &.gear3 {
+      height: 255px;
+      top: 320px;
+      left: 75px;
+      animation: rotate 13s reverse infinite linear;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (orientation:landscape) {
+  header {
+    background-image: url(../imgs/baner/bg600land.jpg);
+
+    div.hero {
+      h1 {
+        font-size: 4vw;
+      }
+      h2 {
+        font-size: 2.5vw;
+      }
+      h3 {
+        font-size: 2vw;
+      }
+    }
+  }
+
+  @media (orientation: landscape) and (max-width: 1000px) {
+    header {
+      img {
+        &.gear1 {
+          height: 315px;
+          top: -82px;
+          left: -74px;
+          animation: rotate 15s infinite linear;
+        }
+
+        &.gear2 {
+          height: 315px;
+          top: 250px;
+          left: 275px;
+          animation: rotate 17s infinite linear;
+        }
+
+        &.gear3 {
+          height: 255px;
+          top: 160px;
+          left: 75px;
+          animation: rotate 13s reverse infinite linear;
+        }
+      }
+    }
+  }
+}
