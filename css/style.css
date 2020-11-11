@@ -334,7 +334,7 @@ div.burger-menu {
 }
 
 div.burger-menu.burger-menu-active {
-  height: 55vh;
+  height: 100vh;
 }
 
 div.burger-menu #phone {
@@ -477,7 +477,7 @@ div.burger-menu nav.burger-nav ul li.active-li {
     height: 8vw;
   }
   div.burger-menu.burger-menu-active {
-    height: 45vw;
+    height: 100vw;
   }
   div.burger-menu #phone {
     font-size: 8vw;
