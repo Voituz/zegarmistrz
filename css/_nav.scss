@@ -81,13 +81,14 @@ div.burger-menu {
 
   #phone {
     color: rgb(30, 207, 7);
-    font-size: 8vh;
-    margin-left: 3vh;
+    font-size: 7vh;
+    margin-left: 4vh;
+    margin-top: 1vh;
   }
 
   i.fa-bars {
-    font-size: 8vh;
-    margin-left: 3vh;
+    font-size: 7vh;
+    margin-left: 4vh;
     color: #eee;
   }
 
@@ -152,8 +153,8 @@ div.burger-menu {
 @media (orientation: landscape) {
   #phonebtn {
     top: 40%;
-    font-size: 3vw;
-    width: 40%;
+    font-size: 2.5vw;
+    width: 30%;
   }
 
   nav.main-nav {
@@ -166,7 +167,7 @@ div.burger-menu {
       align-items: center;
 
       li {
-        font-size: 2.5vw;
+        font-size: 2vw;
         letter-spacing: 2px;
         padding: 2vw;
       }
@@ -176,7 +177,7 @@ div.burger-menu {
 
   div.burger-menu {
     top: 5%;
-    right: -30vw;
+    right: -40vw;
     width: 25vw;
     height: 8vw;
 

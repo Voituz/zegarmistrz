@@ -87,12 +87,8 @@ closeBtns.forEach((btn) => {
   });
 })
 
-document.querySelector('.hero').addEventListener('click', () => {
-  showBanerElements();
-  closePage();
-})
-
 baner.addEventListener('click', () => {
+  divBurger.classList.remove('burger-menu-active');
   showBanerElements();
   closePage();
 })

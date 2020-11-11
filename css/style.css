@@ -206,13 +206,13 @@ header img.gear3 {
     background-image: url(../imgs/baner/bg600land.jpg);
   }
   header div.hero h1 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   header div.hero h2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   header div.hero h3 {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 }
 
@@ -339,13 +339,14 @@ div.burger-menu.burger-menu-active {
 
 div.burger-menu #phone {
   color: #1ecf07;
-  font-size: 8vh;
-  margin-left: 3vh;
+  font-size: 7vh;
+  margin-left: 4vh;
+  margin-top: 1vh;
 }
 
 div.burger-menu i.fa-bars {
-  font-size: 8vh;
-  margin-left: 3vh;
+  font-size: 7vh;
+  margin-left: 4vh;
   color: #eee;
 }
 
@@ -448,8 +449,8 @@ div.burger-menu nav.burger-nav ul li.active-li {
 @media (orientation: landscape) {
   #phonebtn {
     top: 40%;
-    font-size: 3vw;
-    width: 40%;
+    font-size: 2.5vw;
+    width: 30%;
   }
   nav.main-nav {
     top: 60%;
@@ -466,13 +467,13 @@ div.burger-menu nav.burger-nav ul li.active-li {
             align-items: center;
   }
   nav.main-nav ul li {
-    font-size: 2.5vw;
+    font-size: 2vw;
     letter-spacing: 2px;
     padding: 2vw;
   }
   div.burger-menu {
     top: 5%;
-    right: -30vw;
+    right: -40vw;
     width: 25vw;
     height: 8vw;
   }
@@ -542,15 +543,15 @@ footer p a {
     height: 12%;
   }
   footer h2 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-bottom: 0;
   }
   footer p {
-    font-size: 1.3vw;
+    font-size: 1vw;
     margin-bottom: 0;
   }
   footer p i {
-    font-size: 1.3vw;
+    font-size: 1vw;
   }
 }
 
