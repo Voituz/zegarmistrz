@@ -9,6 +9,7 @@ section.gallery {
     a {
       width: 45%;
       transition: .3s;
+      @include hightlight-off;
 
       &:active {
         color: transparent;

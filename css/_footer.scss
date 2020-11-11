@@ -14,23 +14,24 @@ footer {
   transition: .7s;
 
   h2 {
-    font-size: 1.5vh;
+    font-size: 1.2vh;
     margin-bottom: 3px;
   }
 
   p {
     margin-bottom: 3px;
-    font-size: 1.5vh;
+    font-size: 1vh;
 
     i {
       margin-right: 5px;
-      font-size: 1.8vh;
+      font-size: 1.2vh;
       color: #0e76a8;
     }
 
     a {
       color: white;
       text-decoration: none;
+      @include hightlight-off;
     }
   }
 }
@@ -40,16 +41,16 @@ footer {
     height: 12%;
 
     h2 {
-      font-size: 1.2vw;
+      font-size: 1vw;
       margin-bottom: 0;
     }
 
     p {
-      font-size: 1vw;
+      font-size: .8vw;
       margin-bottom: 0;
 
       i {
-        font-size: 1vw;
+        font-size: .8vw;
       }
     }
   }

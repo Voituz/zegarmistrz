@@ -4,10 +4,10 @@
   left: 50%;
   transform: translate(-50%);
   text-decoration: none;
-  width: 60%;
+  width: 50%;
   line-height: 200%;
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 3vh;
   text-align: center;
   padding: 3px;
   color: white;
@@ -16,6 +16,7 @@
   animation: 4s 3s shakebtn infinite both;
   box-shadow: 0 0 6px 2px black;
   transition: .7s;
+  @include hightlight-off;
 
   i.fa-phone {
     transform: rotate(115deg) translate(0, 0);
@@ -30,7 +31,7 @@ nav.main-nav {
   left: 50%;
   transform: translate(-50%);
   background-color: rgba($color: #000000, $alpha: .85);
-  width: 70%;
+  width: 60%;
   height: 40%;
   padding: 1vh;
   border-radius: 10px;
@@ -47,7 +48,7 @@ nav.main-nav {
 
     li {
       color: white;
-      font-size: 3vh;
+      font-size: 2vh;
       letter-spacing: 2px;
       margin: 0 1.5vh;
       background-color: rgba(0, 0, 0, .6);
@@ -66,10 +67,10 @@ nav.main-nav {
 div.burger-menu {
   position: fixed;
   overflow: hidden;
-  top: 22%;
+  top: 23%;
   right: -30vh;
-  width: 25vh;
-  height: 8vh;
+  width: 20vh;
+  height: 7vh;
   z-index: 5;
   background-color: rgba(0, 0, 0, .95);
   border-radius: 4px;
@@ -81,14 +82,15 @@ div.burger-menu {
 
   #phone {
     color: rgb(30, 207, 7);
-    font-size: 7vh;
-    margin-left: 4vh;
+    font-size: 6vh;
+    margin-left: 3vh;
     margin-top: 1vh;
+    @include hightlight-off;
   }
 
   i.fa-bars {
-    font-size: 7vh;
-    margin-left: 4vh;
+    font-size: 6vh;
+    margin-left: 3vh;
     color: #eee;
   }
 
@@ -102,7 +104,7 @@ div.burger-menu {
         margin-top: 4vh;
         margin-bottom: 2vh;
         color: white;
-        font-size: 3.5vh;
+        font-size: 2.7vh;
 
         &.active-li {
           box-shadow: 0 0 8px 2px white;
@@ -179,20 +181,20 @@ div.burger-menu {
     top: 5%;
     right: -40vw;
     width: 25vw;
-    height: 8vw;
+    height: 6vw;
 
     &.burger-menu-active {
       height: 100vw;
     }
 
     #phone {
-      font-size: 8vw;
-      margin-left: 3vw;
+      font-size: 5vw;
+      margin-left: 4vw;
     }
 
     i.fa-bars {
-      font-size: 8vw;
-      margin-left: 3vw;
+      font-size: 5vw;
+      margin-left: 4vw;
 
     }
 
@@ -200,7 +202,7 @@ div.burger-menu {
 
       ul {
         li {
-          font-size: 3vw;
+          font-size: 2vw;
         }
       }
     }

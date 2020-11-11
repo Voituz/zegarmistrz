@@ -19,7 +19,7 @@ const showBanerElements = function() {
     document.getElementById('phonebtn').style.opacity = '1';
     document.querySelector('.main-nav').style.opacity = '1';
     document.querySelector('footer').style.opacity = '1';
-    divBurger.style.right = '-50vh';
+    divBurger.style.right = '-100vw';
     btn.style.opacity = '0';
     btn.style.animation = 'none';
   }))

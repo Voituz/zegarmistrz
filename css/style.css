@@ -49,7 +49,7 @@
   border: none;
   height: 11vh;
   width: 9vh;
-  font-size: 5vh;
+  font-size: 4vh;
   border-radius: 4px;
 }
 
@@ -88,7 +88,7 @@
     top: 40%;
     height: 12vw;
     width: 12vw;
-    font-size: 6vw;
+    font-size: 4vw;
   }
   @-webkit-keyframes btnmove {
     from {
@@ -113,7 +113,7 @@ header {
   overflow: hidden;
   height: 100vh;
   text-align: center;
-  background-image: url(../imgs/baner/bg600por.jpg);
+  background-image: url(../imgs/baner/bg1600por.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -203,7 +203,7 @@ header img.gear3 {
 
 @media (orientation: landscape) {
   header {
-    background-image: url(../imgs/baner/bg600land.jpg);
+    background-image: url(../imgs/baner/bg1600land.jpg);
   }
   header div.hero h1 {
     font-size: 3vw;
@@ -246,10 +246,10 @@ header img.gear3 {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   text-decoration: none;
-  width: 60%;
+  width: 50%;
   line-height: 200%;
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 3vh;
   text-align: center;
   padding: 3px;
   color: white;
@@ -261,6 +261,12 @@ header img.gear3 {
           box-shadow: 0 0 6px 2px black;
   -webkit-transition: .7s;
   transition: .7s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #phonebtn i.fa-phone {
@@ -276,7 +282,7 @@ nav.main-nav {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   background-color: rgba(0, 0, 0, 0.85);
-  width: 70%;
+  width: 60%;
   height: 40%;
   padding: 1vh;
   border-radius: 10px;
@@ -302,7 +308,7 @@ nav.main-nav ul {
 
 nav.main-nav ul li {
   color: white;
-  font-size: 3vh;
+  font-size: 2vh;
   letter-spacing: 2px;
   margin: 0 1.5vh;
   background-color: rgba(0, 0, 0, 0.6);
@@ -322,10 +328,10 @@ nav.main-nav ul li.active-li {
 div.burger-menu {
   position: fixed;
   overflow: hidden;
-  top: 22%;
+  top: 23%;
   right: -30vh;
-  width: 25vh;
-  height: 8vh;
+  width: 20vh;
+  height: 7vh;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.95);
   border-radius: 4px;
@@ -339,14 +345,20 @@ div.burger-menu.burger-menu-active {
 
 div.burger-menu #phone {
   color: #1ecf07;
-  font-size: 7vh;
-  margin-left: 4vh;
+  font-size: 6vh;
+  margin-left: 3vh;
   margin-top: 1vh;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 div.burger-menu i.fa-bars {
-  font-size: 7vh;
-  margin-left: 4vh;
+  font-size: 6vh;
+  margin-left: 3vh;
   color: #eee;
 }
 
@@ -360,7 +372,7 @@ div.burger-menu nav.burger-nav ul li {
   margin-top: 4vh;
   margin-bottom: 2vh;
   color: white;
-  font-size: 3.5vh;
+  font-size: 2.7vh;
 }
 
 div.burger-menu nav.burger-nav ul li.active-li {
@@ -475,21 +487,21 @@ div.burger-menu nav.burger-nav ul li.active-li {
     top: 5%;
     right: -40vw;
     width: 25vw;
-    height: 8vw;
+    height: 6vw;
   }
   div.burger-menu.burger-menu-active {
     height: 100vw;
   }
   div.burger-menu #phone {
-    font-size: 8vw;
-    margin-left: 3vw;
+    font-size: 5vw;
+    margin-left: 4vw;
   }
   div.burger-menu i.fa-bars {
-    font-size: 8vw;
-    margin-left: 3vw;
+    font-size: 5vw;
+    margin-left: 4vw;
   }
   div.burger-menu nav.burger-nav ul li {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 }
 
@@ -518,24 +530,30 @@ footer {
 }
 
 footer h2 {
-  font-size: 1.5vh;
+  font-size: 1.2vh;
   margin-bottom: 3px;
 }
 
 footer p {
   margin-bottom: 3px;
-  font-size: 1.5vh;
+  font-size: 1vh;
 }
 
 footer p i {
   margin-right: 5px;
-  font-size: 1.8vh;
+  font-size: 1.2vh;
   color: #0e76a8;
 }
 
 footer p a {
   color: white;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media (orientation: landscape) {
@@ -543,15 +561,15 @@ footer p a {
     height: 12%;
   }
   footer h2 {
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-bottom: 0;
   }
   footer p {
-    font-size: 1vw;
+    font-size: .8vw;
     margin-bottom: 0;
   }
   footer p i {
-    font-size: 1vw;
+    font-size: .8vw;
   }
 }
 
@@ -619,6 +637,12 @@ section.gallery div.gallery-wrapper a {
   width: 45%;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 section.gallery div.gallery-wrapper a:active {
