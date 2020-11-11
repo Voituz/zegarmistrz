@@ -5,6 +5,7 @@ const liListBurger = [...document.querySelectorAll('nav.burger-nav ul li')];
 const burgerMenu = document.querySelector('i.fa-bars');
 const divBurger = document.querySelector('div.burger-menu');
 const closeBtns = [...document.querySelectorAll('button.close')];
+const baner = document.querySelector('header')
 
 const closePage = () => {
   pages.forEach(page => {
@@ -87,6 +88,11 @@ closeBtns.forEach((btn) => {
 })
 
 document.querySelector('.hero').addEventListener('click', () => {
+  showBanerElements();
+  closePage();
+})
+
+baner.addEventListener('click', () => {
   showBanerElements();
   closePage();
 })
