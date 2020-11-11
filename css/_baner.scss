@@ -17,9 +17,9 @@ header {
     transform: translate(-50%);
     width: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(0, 0, 0, .95);
     color: white;
-    box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, .85);
+    box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, .95);
 
     h1 {
       padding-top: 3vh;
@@ -85,9 +85,11 @@ header {
       h1 {
         font-size: 4vw;
       }
+
       h2 {
         font-size: 2.5vw;
       }
+
       h3 {
         font-size: 2vw;
       }
