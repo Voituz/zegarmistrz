@@ -39,6 +39,7 @@
 
 .close {
   position: fixed;
+  opacity: 0;
   top: 30%;
   right: 1%;
   background-color: transparent;

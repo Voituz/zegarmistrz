@@ -18,7 +18,7 @@ const showBanerElements = function() {
     document.getElementById('phonebtn').style.opacity = '1';
     document.querySelector('.main-nav').style.opacity = '1';
     document.querySelector('footer').style.opacity = '1';
-    divBurger.style.right = '-40vh';
+    divBurger.style.right = '-50vh';
     btn.style.opacity = '0';
     btn.style.animation = 'none';
   }))
@@ -74,6 +74,7 @@ liListBurger.forEach(function(li) {
     closePage();
     const liIndex = liListBurger.indexOf(li);
     showMenuPage(li, liIndex);
+    closeBtns[liIndex].style.animation = 'none';
   })
 })
 
