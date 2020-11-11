@@ -8,7 +8,7 @@
 }
 
 .page {
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,7 +506,7 @@ div.burger-menu nav.burger-nav ul li.active-li {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   display: -webkit-box;
