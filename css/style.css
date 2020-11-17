@@ -556,6 +556,15 @@ footer p a {
   user-select: none;
 }
 
+footer div#attribution {
+  color: white;
+  font-size: 1vh;
+}
+
+footer div#attribution a {
+  color: white;
+}
+
 @media (orientation: landscape) {
   footer {
     height: 12%;
@@ -571,6 +580,9 @@ footer p a {
   footer p i {
     font-size: .8vw;
   }
+  footer div#attribution {
+    font-size: .8vw;
+  }
 }
 
 section.about-me div.about-me-wrapper {
@@ -578,22 +590,37 @@ section.about-me div.about-me-wrapper {
 }
 
 section.about-me div.about-me-wrapper h2 {
-  font-size: 4vh;
-  margin-bottom: 5vh;
+  font-size: 2.5vh;
+  margin-bottom: 3vh;
 }
 
-section.about-me div.about-me-wrapper div.about img {
+section.about-me div.about-me-wrapper div.about a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+section.about-me div.about-me-wrapper div.about a img {
   height: 22vh;
-  border-radius: 5%;
-  -webkit-box-shadow: 0 5px 10px 5px gray;
-          box-shadow: 0 5px 10px 5px gray;
+  border-radius: 5px;
   margin-bottom: 3vh;
   margin-right: 3vh;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.about-me div.about-me-wrapper div.about a img:active {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 section.about-me div.about-me-wrapper div.about p {
-  font-size: 3vh;
-  text-align: justify;
+  font-size: 2.5vh;
+  margin-bottom: 3vh;
+  text-align: left;
 }
 
 @media (orientation: landscape) {
@@ -601,24 +628,25 @@ section.about-me div.about-me-wrapper div.about p {
     width: 90%;
   }
   section.about-me div.about-me-wrapper h2 {
-    font-size: 4vw;
+    font-size: 2vw;
     margin-bottom: 3vw;
   }
-  section.about-me div.about-me-wrapper div.about img {
+  section.about-me div.about-me-wrapper div.about a img {
     float: left;
-    height: 25vw;
-    -webkit-box-shadow: 0 5px 10px 5px gray;
-            box-shadow: 0 5px 10px 5px gray;
+    height: 20vw;
     margin-bottom: 2vw;
     margin-right: 4vw;
   }
   section.about-me div.about-me-wrapper div.about p {
-    font-size: 3vw;
-    text-align: justify;
+    font-size: 2vw;
   }
 }
 
 section.gallery div.gallery-wrapper {
+  width: 80%;
+}
+
+section.gallery div.gallery-wrapper div.popup-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,7 +661,7 @@ section.gallery div.gallery-wrapper {
   width: 100%;
 }
 
-section.gallery div.gallery-wrapper a {
+section.gallery div.gallery-wrapper div.popup-gallery a {
   width: 45%;
   -webkit-transition: .3s;
   transition: .3s;
@@ -645,20 +673,82 @@ section.gallery div.gallery-wrapper a {
   user-select: none;
 }
 
-section.gallery div.gallery-wrapper a:active {
-  color: transparent;
+section.gallery div.gallery-wrapper div.popup-gallery a:active {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-section.gallery div.gallery-wrapper img {
+section.gallery div.gallery-wrapper div.popup-gallery img {
   width: 100%;
   margin-bottom: 5%;
 }
 
 @media (orientation: landscape) {
-  section.gallery div.gallery-wrapper a {
+  section.gallery div.gallery-wrapper div.popup-gallery a {
     width: 22%;
   }
+}
+
+section.services div.services-wrapper {
+  width: 80%;
+}
+
+section.services div.services-wrapper h2 {
+  font-size: 2.8vh;
+  margin-bottom: 3vh;
+}
+
+section.services div.services-wrapper h2:nth-of-type(2) {
+  margin: 6vh 0;
+}
+
+section.services div.services-wrapper div.service img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  height: 3vh;
+  margin: 3vh 0 .5vh;
+}
+
+section.services div.services-wrapper div.service p {
+  font-size: 2.5vh;
+}
+
+@media (orientation: landscape) {
+  section.services div.services-wrapper h2 {
+    font-size: 2.3vw;
+    margin-bottom: 4vw;
+  }
+  section.services div.services-wrapper h2:nth-of-type(2) {
+    margin: 4vw 0;
+  }
+  section.services div.services-wrapper div.service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2vw;
+  }
+  section.services div.services-wrapper div.service img {
+    height: 2.5vw;
+    margin: 0 2vw;
+  }
+  section.services div.services-wrapper div.service p {
+    font-size: 2vw;
+  }
+}
+
+section.contact div.contact-wrapper {
+  width: 80%;
+}
+
+section.contact div.contact-wrapper div.socials p {
+  font-size: 2.5vh;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,6 +9,7 @@ const baner = document.querySelector('header')
 
 const closePage = () => {
   pages.forEach(page => {
+    page.style.transition = '.7s height, .5s .2s padding';
     page.classList.remove('active-page');
     liList.forEach((li => li.classList.remove('active-li')));
   })
@@ -36,7 +37,7 @@ const showMenuPage = function (li, liIndex) {
     closeBtns[liIndex].style.animation = '.7s btnmove';
     pages[liIndex].classList.toggle('active-page');
     pages.forEach((page => {
-      page.style.transition = '.7s height, .7s padding';
+      page.style.transition = '.7s height, .1s padding';
     }));
 }
 
