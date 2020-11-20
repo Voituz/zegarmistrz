@@ -6,7 +6,6 @@
 }
 @mixin hightlight-off {
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -71,12 +70,12 @@
 
 @media (orientation: landscape) {
   .active-page {
-    height: 60%;
+    height: 70%;
     padding: 5vw;
   }
 
   .close {
-    top: 40%;
+    top: 30%;
     height: 12vw;
     width: 12vw;
     font-size: 4vw;
@@ -88,7 +87,7 @@
     }
 
     to {
-      top: 40%;
+      top: 30%;
     }
   }
 }

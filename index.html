@@ -35,9 +35,9 @@
         <h2>Romuald Jasiewicz</h2>
         <h3>ul. Miodowa 6, Kraków (pasaż)</h3>
       </div>
-      <img class="gear1" src="./imgs/baner/gear1.600.png" alt="animation-element">
-      <img class="gear2" src="./imgs/baner/gear2.600.png" alt="animation-element">
-      <img class="gear3" src="./imgs/baner/gear3.500.png" alt="">
+      <img class="gear1" src="./imgs/outfit/gear1.600.png" alt="animation-element">
+      <img class="gear2" src="./imgs/outfit/gear2.600.png" alt="animation-element">
+      <img class="gear3" src="./imgs/outfit/gear3.500.png" alt="">
     </header>
 
     <!-- menu -->
@@ -85,7 +85,8 @@
           <a href="./imgs/omnie1400.jpg" class="image-popup"><img src="./imgs/omnie500.jpg"
               alt="zdjęcie właściciela Romualda Jasiewicza"></a>
           <p>W 1976 r. po ukończeniu nauki w szkole zegarmistrzowskiej w Krakowie podjąłem pracę w wyuczonym zawodzie w
-            zakładzie zegarmistrzowskim na ul. Zwierzynieckiej. Po odbyciu służby w zegarmistrz przeszło 45 lat, w kilku
+            zakładzie zegarmistrzowskim na ul. Zwierzynieckiej. Po odbyciu służby wojskowej , nieprzerwanie pracuję jako
+            zegarmistrz przeszło 45 lat, w kilku
             zakładach zegarmistrzowskich: na Placu Mariackim, Stradomskiej, Starowiślnej i obecnie na Miodowej.</p>
           <p>Istotną cechą mojego zakładu, jest to że specjalizuję się w naprawie wszelkich czasomierzy, począwszy od
             zegarków naręcznych mechanicznych, kieszonkowych sprężynowych tradycyjnie nakręcanych, automatów,
@@ -133,27 +134,27 @@
         <button class="close"><i class="far fa-times-circle"></i></button>
         <h2>W zakresie usług, które oferuję jest:</h2>
         <div class="service">
-          <img src="./imgs/baner/clock.png" alt="ikona zegara">
+          <img src="./imgs/outfit/clock.png" alt="ikona zegara">
           <p>Naprawa wszystkiego co odmierza czas</p>
         </div>
         <div class="service">
-          <img src="./imgs/baner/clock.png" alt="ikona zegara">
+          <img src="./imgs/outfit/clock.png" alt="ikona zegara">
           <p>Odnawianie tarcz, kopert i skrzynek zegarowych</p>
         </div>
         <div class="service">
-          <img src="./imgs/baner/clock.png" alt="ikona zegara">
+          <img src="./imgs/outfit/clock.png" alt="ikona zegara">
           <p>Wymiana baterii, pasków, bransolet i szkieł do zegarków kwarcowych</p>
         </div>
         <div class="service">
-          <img src="./imgs/baner/clock.png" alt="ikona zegara">
+          <img src="./imgs/outfit/clock.png" alt="ikona zegara">
           <p>Dorabianie uszkodzonych części do zegarów antycznych</p>
         </div>
         <div class="service">
-          <img src="./imgs/baner/clock.png" alt="ikona zegara">
+          <img src="./imgs/outfit/clock.png" alt="ikona zegara">
           <p>Dojazd do klientów</p>
         </div>
         <div class="service">
-          <img src="./imgs/baner/clock.png" alt="ikona zegara">
+          <img src="./imgs/outfit/clock.png" alt="ikona zegara">
           <p>Sprzedaż zegarów kwarcowych, budzików, minutników</p>
         </div>
         <h2>Usługi wykonuję szybko i solidnie, a cena dostosowana jest do konkretnego zlecenia</h2>
@@ -165,22 +166,44 @@
     <section class="page contact">
       <div class="contact-wrapper">
         <button class="close"><i class="far fa-times-circle"></i></button>
-
+        <h2>Można się ze mną skontaktować przez:</h2>
         <div class="socials">
-          <p>Telefon: 607 938 854</p>
-          <p>e-mail: zegarmistrz.miodowa.krakow@gmail.com</p>
-          <p>facebook: https://www.facebook.com/Zegarmistrz-Romuald-Jasiewicz-113104997264142</p>
+          <a href="tel:607938854"><img src="./imgs/outfit/phone.png" alt="phone image">
+            <p>607 938 854</p>
+          </a>
+          <a href="mailto:zegarmistrz.miodowa.krakow@gmail.com"><img src="./imgs/outfit/gmail.png" alt="gmail image">
+            <p>zegarmistrz.miodowa.krakow@gmail.com</p>
+          </a>
+          <a href="https://www.facebook.com/Zegarmistrz-Romuald-Jasiewicz-113104997264142"><img
+              src="./imgs/outfit/facebook.png" alt="facebook image">
+            <p>@Zegarmistrz - Romuald Jasiewicz</p>
+          </a>
         </div>
-
-        <div class="form">
-          <!-- <iframe allowTransparency="true"
-          style="min-height:300px; height:inherit; overflow:auto;" width="100%" id="contactform123"
-          name="contactform123" marginwidth="0" marginheight="0" frameborder="0"
-          src="//www.123formbuilder.com/my-contact-form-5693446.html">
-          <p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact
-            method (phone, fax etc)</p>
-        </iframe> -->
-        </div>
+        <h2>Lub od razu napisać do mnie wiadomość:</h2>
+        <form action="https://formspree.io/f/xleolkze" method="POST">
+          <label for="form-name">
+            Imię
+            <input type="text" name="Imię:" id="form-name">
+          </label>
+          <label for="form-email">
+            E-mail
+            <input type="email" name="e-mail:" id="form-email">
+          </label>          
+          <label for="form-phone">
+            Telefon
+            <input type="number" name="tel.:" id="form-phone">
+          </label>
+          <label for="form-message">
+            Treść wiadomości
+            <textarea name="wiadomość:" id="form-message" cols="30" rows="10"></textarea>
+          </label>
+          <label for="form-checkbox" class="form-checkbox">
+            <input type="checkbox" name="polityka prywatności" id="form-checkbox">
+            Akceptuję <a href="">politykę prywatności</a> 
+          </label>
+          <button type="submit" id="form-submit">Wyślij</button>
+          <div id="form-status"></div>
+        </form>
       </div>
     </section>
 
@@ -194,7 +217,9 @@
     </section>
   </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
   <script src="./magnific-gallery/jquery.magnific-popup.js"></script>
   <script>
     $(document).ready(function () {

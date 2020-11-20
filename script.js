@@ -93,3 +93,41 @@ baner.addEventListener('click', () => {
   showBanerElements();
   closePage();
 })
+
+// form
+document.querySelector('#form-submit').addEventListener('click', function(event) {
+
+  const name = [...document.querySelector('#form-name').value];
+  const email = [...document.querySelector('#form-email').value];
+  const phone = [...document.querySelector('#form-phone').value];
+  const message = document.querySelector('#form-message').value;
+  const checkbox = document.querySelector('#form-checkbox');
+  const status = document.querySelector('#form-status');
+
+  status.textContent = '';
+  if(checkbox.checked !== true) {
+    event.preventDefault();
+    status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Musisz zaakceptować politykę prywatności';
+  }
+  if(message.length <= 10) {
+    event.preventDefault();
+    status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Wiadomość za krótka';
+  }
+  if(phone.length !== 9) {
+    event.preventDefault();
+    status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy numer telefonu';
+  }
+  if(!email.includes('@')) {
+    event.preventDefault();
+    status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy e-mail';
+  }
+  if(!email.includes('.')) {
+    event.preventDefault();
+    status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy e-mail';
+  }
+  if(name.length <= 2) {
+    event.preventDefault();
+    status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowe imię';
+  }
+  console.log(email);
+})

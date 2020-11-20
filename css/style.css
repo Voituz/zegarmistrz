@@ -81,11 +81,11 @@
 
 @media (orientation: landscape) {
   .active-page {
-    height: 60%;
+    height: 70%;
     padding: 5vw;
   }
   .close {
-    top: 40%;
+    top: 30%;
     height: 12vw;
     width: 12vw;
     font-size: 4vw;
@@ -95,7 +95,7 @@
       top: 100%;
     }
     to {
-      top: 40%;
+      top: 30%;
     }
   }
   @keyframes btnmove {
@@ -103,7 +103,7 @@
       top: 100%;
     }
     to {
-      top: 40%;
+      top: 30%;
     }
   }
 }
@@ -113,7 +113,7 @@ header {
   overflow: hidden;
   height: 100vh;
   text-align: center;
-  background-image: url(../imgs/baner/bg1600por.jpg);
+  background-image: url(../imgs/outfit/bg1600por.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -203,7 +203,7 @@ header img.gear3 {
 
 @media (orientation: landscape) {
   header {
-    background-image: url(../imgs/baner/bg1600land.jpg);
+    background-image: url(../imgs/outfit/bg1600land.jpg);
   }
   header div.hero h1 {
     font-size: 3vw;
@@ -262,7 +262,6 @@ header img.gear3 {
   -webkit-transition: .7s;
   transition: .7s;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -349,7 +348,6 @@ div.burger-menu #phone {
   margin-left: 3vh;
   margin-top: 1vh;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -549,7 +547,6 @@ footer p a {
   color: white;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -596,7 +593,6 @@ section.about-me div.about-me-wrapper h2 {
 
 section.about-me div.about-me-wrapper div.about a {
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -620,7 +616,7 @@ section.about-me div.about-me-wrapper div.about a img:active {
 section.about-me div.about-me-wrapper div.about p {
   font-size: 2.5vh;
   margin-bottom: 3vh;
-  text-align: left;
+  text-align: center;
 }
 
 @media (orientation: landscape) {
@@ -666,7 +662,6 @@ section.gallery div.gallery-wrapper div.popup-gallery a {
   -webkit-transition: .3s;
   transition: .3s;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -694,7 +689,7 @@ section.services div.services-wrapper {
 }
 
 section.services div.services-wrapper h2 {
-  font-size: 2.8vh;
+  font-size: 2.5vh;
   margin-bottom: 3vh;
 }
 
@@ -715,7 +710,7 @@ section.services div.services-wrapper div.service p {
 
 @media (orientation: landscape) {
   section.services div.services-wrapper h2 {
-    font-size: 2.3vw;
+    font-size: 2vw;
     margin-bottom: 4vw;
   }
   section.services div.services-wrapper h2:nth-of-type(2) {
@@ -744,11 +739,233 @@ section.services div.services-wrapper div.service p {
 }
 
 section.contact div.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
 }
 
-section.contact div.contact-wrapper div.socials p {
+section.contact div.contact-wrapper h2 {
   font-size: 2.5vh;
-  text-align: left;
+  margin-bottom: 3vh;
+}
+
+section.contact div.contact-wrapper h2:nth-of-type(2) {
+  margin: 3vh;
+}
+
+section.contact div.contact-wrapper div.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.contact div.contact-wrapper div.socials a {
+  text-decoration: none;
+  margin: 1vh 0;
+}
+
+section.contact div.contact-wrapper div.socials a img {
+  height: 5vh;
+}
+
+section.contact div.contact-wrapper div.socials a p {
+  font-size: 2vh;
+  color: #eee;
+}
+
+section.contact div.contact-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+section.contact div.contact-wrapper form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1vh 0;
+  font-size: 2.5vh;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+section.contact div.contact-wrapper form label.form-checkbox {
+  display: inline-block;
+  font-size: 2vh;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+section.contact div.contact-wrapper form label.form-checkbox a {
+  color: #eee;
+}
+
+section.contact div.contact-wrapper form label.form-checkbox #form-checkbox {
+  margin-right: 5px;
+}
+
+section.contact div.contact-wrapper form label.form-checkbox #form-checkbox:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.contact div.contact-wrapper form label input {
+  margin: 1vh 0;
+  background-color: transparent;
+  color: #eee;
+  font-size: 2.5vh;
+  padding: 1vh;
+  border: none;
+  border-bottom: 1px solid white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.contact div.contact-wrapper form label input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 4px 4px -2px white;
+          box-shadow: 0 4px 4px -2px white;
+}
+
+section.contact div.contact-wrapper form label input::-webkit-outer-spin-button, section.contact div.contact-wrapper form label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
+section.contact div.contact-wrapper form label input:-webkit-autofill, section.contact div.contact-wrapper form label input:-webkit-autofill:hover, section.contact div.contact-wrapper form label input:-webkit-autofill:focus, section.contact div.contact-wrapper form label input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s;
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+section.contact div.contact-wrapper form label textarea {
+  margin: 1vh 0;
+  background-color: transparent;
+  color: #eee;
+  font-size: 2.5vh;
+  padding: 1vh;
+  border: 1px solid white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.contact div.contact-wrapper form label textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 4px 2px white;
+          box-shadow: 0 0 4px 2px white;
+}
+
+section.contact div.contact-wrapper form button#form-submit {
+  background-color: transparent;
+  color: #eee;
+  font-size: 2.5vh;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 1vh 0;
+  padding: 1vh;
+  border: 1px solid white;
+  -webkit-box-shadow: 3px 3px 0 0 #aaa;
+          box-shadow: 3px 3px 0 0 #aaa;
+}
+
+section.contact div.contact-wrapper form button#form-submit:active {
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.contact div.contact-wrapper form button#form-submit:focus {
+  outline: none;
+}
+
+section.contact div.contact-wrapper form div#form-status {
+  margin-top: 1vh;
+  font-size: 2vh;
+}
+
+section.contact div.contact-wrapper form div#form-status img {
+  height: 2vh;
+  margin-right: 1vh;
+}
+
+@media (orientation: landscape) {
+  section.contact div.contact-wrapper h2 {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+  }
+  section.contact div.contact-wrapper h2:nth-of-type(2) {
+    margin: 2vw;
+  }
+  section.contact div.contact-wrapper div.socials a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1vw 0 1vw 10vw;
+  }
+  section.contact div.contact-wrapper div.socials a img {
+    height: 4vw;
+  }
+  section.contact div.contact-wrapper div.socials a p {
+    line-height: 4vw;
+    margin-left: 3vw;
+    font-size: 2vw;
+  }
+  section.contact div.contact-wrapper form {
+    width: 60%;
+  }
+  section.contact div.contact-wrapper form label {
+    margin: 1vw 0;
+    font-size: 2vw;
+  }
+  section.contact div.contact-wrapper form label.form-checkbox {
+    font-size: 2vw;
+  }
+  section.contact div.contact-wrapper form label input {
+    margin: 1vw 0;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  section.contact div.contact-wrapper form label textarea {
+    margin: 2vw 0;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+  section.contact div.contact-wrapper form button#form-submit {
+    font-size: 2.5vw;
+    margin: 1vw 0;
+    padding: 1vw;
+  }
+  section.contact div.contact-wrapper form div#form-status {
+    margin-top: 1vw;
+    font-size: 2vw;
+  }
+  section.contact div.contact-wrapper form div#form-status img {
+    height: 2vw;
+    margin-right: 1vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

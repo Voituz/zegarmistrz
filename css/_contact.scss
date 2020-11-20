@@ -1,10 +1,220 @@
 section.contact {
   div.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
+
+    h2 {
+      font-size: 2.5vh;
+      margin-bottom: 3vh;
+    }
+
+    h2:nth-of-type(2) {
+      margin: 3vh;
+    }
+
     div.socials {
-      p {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        text-decoration: none;
+        margin: 1vh 0;
+
+        img {
+          height: 5vh;
+        }
+
+        p {
+          font-size: 2vh;
+          color: #eee;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        margin: 1vh 0;
         font-size: 2.5vh;
-        text-align: left;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+        &.form-checkbox {
+          display: inline-block;
+          font-size: 2vh;
+          font-weight: normal;
+          letter-spacing: 0;
+
+          a {
+            color: #eee;
+          }
+
+          #form-checkbox {
+            margin-right: 5px;
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+
+        input {
+          margin: 1vh 0;
+          background-color: transparent;
+          color: #eee;
+          font-size: 2.5vh;
+          padding: 1vh;
+          border: none;
+          border-bottom: 1px solid white;
+          transition: .3s;
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 4px 4px -2px white;
+          }
+
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+            margin: 0;
+          }
+
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            transition: background-color 5000s;
+            -webkit-text-fill-color: #fff !important;
+          }
+        }
+
+        textarea {
+          margin: 1vh 0;
+          background-color: transparent;
+          color: #eee;
+          font-size: 2.5vh;
+          padding: 1vh;
+          border: 1px solid white;
+          transition: .3s;
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 4px 2px white;
+          }
+        }
+      }
+
+      button#form-submit {
+        background-color: transparent;
+        color: #eee;
+        font-size: 2.5vh;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 1vh 0;
+        padding: 1vh;
+        border: 1px solid white;
+        box-shadow: 3px 3px 0 0 #aaa;
+
+        &:active {
+          transform: translate(3px, 3px);
+          box-shadow: none;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      div#form-status {
+        margin-top: 1vh;
+        font-size: 2vh;
+
+        img {
+          height: 2vh;
+          margin-right: 1vh;
+        }
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  section.contact {
+    div.contact-wrapper {
+      h2 {
+        font-size: 2vw;
+        margin-bottom: 2vw;
+      }
+
+      h2:nth-of-type(2) {
+        margin: 2vw;
+      }
+
+      div.socials {
+        a {
+          display: flex;
+          margin: 1vw 0 1vw 10vw;
+
+          img {
+            height: 4vw;
+          }
+
+          p {
+            line-height: 4vw;
+            margin-left: 3vw;
+            font-size: 2vw;
+          }
+        }
+      }
+
+      form {
+        width: 60%;
+
+        label {
+          margin: 1vw 0;
+          font-size: 2vw;
+
+          &.form-checkbox {
+            font-size: 2vw;
+          }
+
+          input {
+            margin: 1vw 0;
+            font-size: 2vw;
+            padding: 1vw;
+          }
+
+          textarea {
+            margin: 2vw 0;
+            font-size: 2vw;
+            padding: 1vw;
+          }
+        }
+
+        button#form-submit {
+          font-size: 2.5vw;
+          margin: 1vw 0;
+          padding: 1vw;
+        }
+
+        div#form-status {
+          margin-top: 1vw;
+          font-size: 2vw;
+
+          img {
+            height: 2vw;
+            margin-right: 1vw;
+          }
+        }
       }
     }
   }

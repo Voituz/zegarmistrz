@@ -5,7 +5,7 @@ header {
   overflow: hidden;
   height: 100vh;
   text-align: center;
-  background-image: url(../imgs/baner/bg1600por.jpg);
+  background-image: url(../imgs/outfit/bg1600por.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -79,7 +79,7 @@ header {
 
 @media (orientation:landscape) {
   header {
-    background-image: url(../imgs/baner/bg1600land.jpg);
+    background-image: url(../imgs/outfit/bg1600land.jpg);
 
     div.hero {
       h1 {
