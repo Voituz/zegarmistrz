@@ -61,6 +61,42 @@
   margin-left: 1vh;
 }
 
+div.wrapper div.send-info {
+  position: fixed;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  z-index: 10;
+  background-color: black;
+  color: #eee;
+}
+
+div.wrapper div.send-info h1 {
+  font-size: 3vh;
+  margin-bottom: 3vh;
+  text-transform: uppercase;
+}
+
+div.wrapper div.send-info h1 img {
+  height: 3vh;
+}
+
+div.wrapper div.send-info h2 {
+  font-size: 2vh;
+}
+
 @-webkit-keyframes btnmove {
   from {
     top: 100%;
@@ -89,6 +125,16 @@
     height: 12vw;
     width: 12vw;
     font-size: 4vw;
+  }
+  div.wrapper div.send-info h1 {
+    font-size: 3vw;
+    margin-bottom: 3vw;
+  }
+  div.wrapper div.send-info h1 img {
+    height: 3vw;
+  }
+  div.wrapper div.send-info h2 {
+    font-size: 2vw;
   }
   @-webkit-keyframes btnmove {
     from {
@@ -777,11 +823,11 @@ section.contact div.contact-wrapper div.socials a {
 }
 
 section.contact div.contact-wrapper div.socials a img {
-  height: 5vh;
+  height: 2.5vh;
 }
 
 section.contact div.contact-wrapper div.socials a p {
-  font-size: 2vh;
+  font-size: 1.5vh;
   color: #eee;
 }
 
@@ -924,15 +970,14 @@ section.contact div.contact-wrapper form div#form-status img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 1vw 0 1vw 10vw;
   }
   section.contact div.contact-wrapper div.socials a img {
-    height: 4vw;
+    height: 2.5vw;
   }
   section.contact div.contact-wrapper div.socials a p {
-    line-height: 4vw;
-    margin-left: 3vw;
-    font-size: 2vw;
+    line-height: 2.5vw;
+    margin-left: 1vw;
+    font-size: 1.5vw;
   }
   section.contact div.contact-wrapper form {
     width: 60%;

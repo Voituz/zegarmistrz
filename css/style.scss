@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: arial, sans-serif;
 }
+
 @mixin hightlight-off {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
@@ -58,6 +59,37 @@
   }
 }
 
+div.wrapper {
+  div.send-info {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    color: #eee;
+
+    h1 {
+      font-size: 3vh;
+      margin-bottom: 3vh;
+      text-transform: uppercase;
+
+      img {
+        height: 3vh;
+      }
+    }
+
+    h2 {
+      font-size: 2vh;
+    }
+  }
+}
+
 @keyframes btnmove {
   from {
     top: 100%;
@@ -79,6 +111,22 @@
     height: 12vw;
     width: 12vw;
     font-size: 4vw;
+  }
+
+  div.wrapper {
+    div.send-info {
+      h1 {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+        img {
+          height: 3vw;
+        }
+      }
+
+      h2 {
+        font-size: 2vw;
+      }
+    }
   }
 
   @keyframes btnmove {

@@ -1,4 +1,4 @@
-
+// page funcionality elements
 const pages = [...document.querySelectorAll('.page')];
 const liList = [...document.querySelectorAll('nav.main-nav ul li')];
 const liListBurger = [...document.querySelectorAll('nav.burger-nav ul li')];
@@ -6,6 +6,15 @@ const burgerMenu = document.querySelector('i.fa-bars');
 const divBurger = document.querySelector('div.burger-menu');
 const closeBtns = [...document.querySelectorAll('button.close')];
 const baner = document.querySelector('header')
+// contact-form
+const name = document.querySelector('#form-name');
+const email = document.querySelector('#form-email');
+const phone = document.querySelector('#form-phone');
+const message = document.querySelector('#form-message');
+const checkbox = document.querySelector('#form-checkbox');
+const status = document.querySelector('#form-status');
+const send = document.querySelector('div.send-info');
+
 
 const closePage = () => {
   pages.forEach(page => {
@@ -94,40 +103,38 @@ baner.addEventListener('click', () => {
   closePage();
 })
 
-// form
+// contact-form
 document.querySelector('#form-submit').addEventListener('click', function(event) {
-
-  const name = [...document.querySelector('#form-name').value];
-  const email = [...document.querySelector('#form-email').value];
-  const phone = [...document.querySelector('#form-phone').value];
-  const message = document.querySelector('#form-message').value;
-  const checkbox = document.querySelector('#form-checkbox');
-  const status = document.querySelector('#form-status');
-
-  status.textContent = '';
   if(checkbox.checked !== true) {
     event.preventDefault();
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Musisz zaakceptować politykę prywatności';
+  } else {
+    status.innerHTML = '<img src="./imgs/outfit/check.png" alt="alert"> Wysłano wiadomość :)';
+    send.style.display = 'flex';
+    event.preventDefault();
+    setTimeout(function() {
+      document.querySelector('.contact form').submit();
+      document.querySelector('.contact form').reset();
+    }, 2000)
   }
-  if(message.length <= 10) {
+  if(message.value.length <= 10) {
     event.preventDefault();
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Wiadomość za krótka';
   }
-  if(phone.length !== 9) {
+  if(phone.value.length !== 9) {
     event.preventDefault();
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy numer telefonu';
   }
-  if(!email.includes('@')) {
+  if(!email.value.includes('@')) {
     event.preventDefault();
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy e-mail';
   }
-  if(!email.includes('.')) {
+  if(!email.value.includes('.')) {
     event.preventDefault();
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy e-mail';
   }
-  if(name.length <= 2) {
+  if(name.value.length <= 2) {
     event.preventDefault();
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowe imię';
   }
-  console.log(email);
 })
