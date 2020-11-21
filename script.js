@@ -138,10 +138,3 @@ document.querySelector('#form-submit').addEventListener('click', function(event)
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowe imię';
   }
 })
-
-// viewport stabilizing
-// const initialHeight = '100';
-
-//  document.documentElement.style.setProperty('overflow', 'auto')
-//  const metaViewport = document.querySelector('meta[name=viewport]')
-//  metaViewport.setAttribute('content', 'height=' + initialHeight + 'px, width=device-width, initial-scale=1.0');
