@@ -175,6 +175,14 @@ section.contact {
         }
       }
 
+
+    }
+  }
+}
+
+@media (orientation: landscape) and (min-height:500px) {
+  section.contact {
+    div.contact-wrapper {
       form {
         width: 60%;
 
