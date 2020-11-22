@@ -21,13 +21,15 @@ section.contact {
       a {
         text-decoration: none;
         margin: 1vh 0;
+        background-color: rgba(0, 0, 0, .7);
+        box-shadow: 0 0 6px 6px black;
 
         img {
-          height: 2.5vh;
+          height: 2vh;
         }
 
         p {
-          font-size: 1.5vh;
+          font-size: 2vh;
           color: #eee;
         }
       }
@@ -42,7 +44,7 @@ section.contact {
         display: flex;
         flex-direction: column;
         margin: 1vh 0;
-        font-size: 2.5vh;
+        font-size: 2vh;
         font-weight: bold;
         letter-spacing: 1px;
 
@@ -151,7 +153,7 @@ section.contact {
   section.contact {
     div.contact-wrapper {
       h2 {
-        font-size: 2vw;
+        font-size: 2.5vw;
         margin-bottom: 2vw;
       }
 
@@ -170,17 +172,21 @@ section.contact {
           p {
             line-height: 2.5vw;
             margin-left: 1vw;
-            font-size: 1.5vw;
+            font-size: 2vw;
           }
         }
       }
-
-
     }
   }
 }
 
-@media (orientation: landscape) and (min-height:500px) {
+@media (orientation: landscape) and (max-height:200px) {
+  section.contact.active-page {
+    height: 100%;
+  }
+}
+
+@media (orientation: landscape) and (min-width:500px) {
   section.contact {
     div.contact-wrapper {
       form {
