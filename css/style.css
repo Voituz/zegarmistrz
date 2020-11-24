@@ -247,7 +247,7 @@ header img.gear3 {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 500px) {
   header {
     background-image: url(../imgs/outfit/bg1600land.jpg);
   }
@@ -262,13 +262,13 @@ header img.gear3 {
   }
 }
 
-@media (orientation: landscape) and (orientation: landscape) and (max-height: 200px) {
+@media (orientation: landscape) and (min-width: 500px) and (orientation: landscape) and (max-height: 200px) {
   header div.hero {
     display: none;
   }
 }
 
-@media (orientation: landscape) and (orientation: landscape) and (max-width: 1000px) {
+@media (orientation: landscape) and (min-width: 500px) and (orientation: landscape) and (max-width: 1000px) {
   header img.gear1 {
     height: 315px;
     top: -82px;
@@ -508,7 +508,7 @@ div.burger-menu nav.burger-nav ul li.active-li {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 500px) {
   #phonebtn {
     top: 40%;
     font-size: 2.5vw;

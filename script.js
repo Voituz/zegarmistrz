@@ -1,4 +1,4 @@
-// page funcionality elements
+// page functionality elements
 const pages = [...document.querySelectorAll('.page')];
 const liList = [...document.querySelectorAll('nav.main-nav ul li')];
 const liListBurger = [...document.querySelectorAll('nav.burger-nav ul li')];
@@ -125,11 +125,7 @@ document.querySelector('#form-submit').addEventListener('click', function(event)
     event.preventDefault();
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy numer telefonu';
   }
-  if(!email.value.includes('@')) {
-    event.preventDefault();
-    status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy e-mail';
-  }
-  if(!email.value.includes('.')) {
+  if(!email.value.includes('@') || !email.value.includes('.')) {
     event.preventDefault();
     status.innerHTML = '<img src="./imgs/outfit/exclamation-mark.png" alt="alert"> Nieprawidłowy e-mail';
   }

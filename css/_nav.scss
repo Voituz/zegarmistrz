@@ -152,7 +152,7 @@ div.burger-menu {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 500px) {
   #phonebtn {
     top: 40%;
     font-size: 2.5vw;

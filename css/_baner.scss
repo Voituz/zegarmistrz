@@ -77,7 +77,7 @@ header {
   }
 }
 
-@media (orientation:landscape) {
+@media (orientation:landscape) and (min-width: 500px) {
   header {
     background-image: url(../imgs/outfit/bg1600land.jpg);
 
