@@ -55,7 +55,7 @@ header {
       height: 315px;
       top: 400px;
       left: -180px;
-      animation: rotate 15s infinite linear;
+      animation: rotate 16s infinite linear;
     }
 
     &.gear3 {
@@ -109,16 +109,16 @@ header {
       img {
         &.gear1 {
           height: 315px;
-          top: -82px;
+          top: -75px;
           left: -74px;
           animation: rotate 15s infinite linear;
         }
 
         &.gear2 {
           height: 315px;
-          top: 250px;
-          left: 275px;
-          animation: rotate 17s infinite linear;
+          top: 255px;
+          left: 270px;
+          animation: rotate 16s infinite linear;
         }
 
         &.gear3 {
@@ -126,6 +126,7 @@ header {
           top: 160px;
           left: 75px;
           animation: rotate 13s reverse infinite linear;
+
         }
       }
     }

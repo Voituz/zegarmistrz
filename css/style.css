@@ -214,8 +214,8 @@ header img.gear2 {
   height: 315px;
   top: 400px;
   left: -180px;
-  -webkit-animation: rotate 15s infinite linear;
-          animation: rotate 15s infinite linear;
+  -webkit-animation: rotate 16s infinite linear;
+          animation: rotate 16s infinite linear;
 }
 
 header img.gear3 {
@@ -271,17 +271,17 @@ header img.gear3 {
 @media (orientation: landscape) and (min-width: 500px) and (orientation: landscape) and (max-width: 1000px) {
   header img.gear1 {
     height: 315px;
-    top: -82px;
+    top: -75px;
     left: -74px;
     -webkit-animation: rotate 15s infinite linear;
             animation: rotate 15s infinite linear;
   }
   header img.gear2 {
     height: 315px;
-    top: 250px;
-    left: 275px;
-    -webkit-animation: rotate 17s infinite linear;
-            animation: rotate 17s infinite linear;
+    top: 255px;
+    left: 270px;
+    -webkit-animation: rotate 16s infinite linear;
+            animation: rotate 16s infinite linear;
   }
   header img.gear3 {
     height: 255px;
