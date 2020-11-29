@@ -14,6 +14,22 @@
   user-select: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #eee; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999; 
+}
+
 .page {
   position: fixed;
   display: flex;
@@ -136,6 +152,24 @@ div.wrapper {
 
     to {
       top: 30%;
+    }
+  }
+}
+
+@media (orientation:landscape) and (min-width: 1025px) {
+  body {
+    background-color: black;
+    div.wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      .page {
+        max-width: 1200px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      .close {
+        display: none;
+      }
     }
   }
 }

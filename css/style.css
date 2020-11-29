@@ -7,6 +7,22 @@
   font-family: arial, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
 .page {
   position: fixed;
   display: -webkit-box;
@@ -154,6 +170,25 @@ div.wrapper div.send-info h2 {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1025px) {
+  body {
+    background-color: black;
+  }
+  body div.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  body div.wrapper .page {
+    max-width: 1200px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  body div.wrapper .close {
+    display: none;
+  }
+}
+
 header {
   position: relative;
   overflow: hidden;
@@ -177,6 +212,7 @@ header div.hero {
   color: white;
   -webkit-box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, 0.95);
           box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, 0.95);
+  cursor: pointer;
 }
 
 header div.hero h1 {
@@ -247,28 +283,13 @@ header img.gear3 {
   }
 }
 
-@media (orientation: landscape) and (min-width: 500px) {
-  header {
-    background-image: url(../imgs/outfit/bg1600land.jpg);
-  }
-  header div.hero h1 {
-    font-size: 3vw;
-  }
-  header div.hero h2 {
-    font-size: 2vw;
-  }
-  header div.hero h3 {
-    font-size: 1.5vw;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 500px) and (orientation: landscape) and (max-height: 200px) {
+@media (orientation: landscape) and (max-height: 200px) {
   header div.hero {
     display: none;
   }
 }
 
-@media (orientation: landscape) and (min-width: 500px) and (orientation: landscape) and (max-width: 1000px) {
+@media (orientation: landscape) and (max-width: 1000px) {
   header img.gear1 {
     height: 315px;
     top: -75px;
@@ -291,8 +312,59 @@ header img.gear3 {
   }
 }
 
+@media (orientation: landscape) and (min-width: 500px) {
+  header {
+    background-image: url(../imgs/outfit/bg1600land.jpg);
+  }
+  header div.hero h1 {
+    font-size: 3vw;
+  }
+  header div.hero h2 {
+    font-size: 2vw;
+  }
+  header div.hero h3 {
+    font-size: 1.5vw;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+  header div.hero {
+    position: absolute;
+    height: 20%;
+  }
+  header div.hero h1 {
+    font-size: 5vh;
+  }
+  header div.hero h2 {
+    font-size: 4vh;
+  }
+  header div.hero h3 {
+    font-size: 3vh;
+  }
+  header img.gear1 {
+    height: 220px;
+    top: 160px;
+    left: -50px;
+    -webkit-animation: rotate 15s infinite linear;
+            animation: rotate 15s infinite linear;
+  }
+  header img.gear2 {
+    height: 220px;
+    top: 405px;
+    left: -72px;
+    -webkit-animation: rotate 16s infinite linear;
+            animation: rotate 16s infinite linear;
+  }
+  header img.gear3 {
+    height: 170px;
+    top: 313px;
+    left: 72px;
+    animation: rotate 13s reverse infinite linear;
+  }
+}
+
 #phonebtn {
-  position: absolute;
+  position: fixed;
   top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -327,7 +399,7 @@ header img.gear3 {
 }
 
 nav.main-nav {
-  position: absolute;
+  position: fixed;
   top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -367,6 +439,7 @@ nav.main-nav ul li {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -374,6 +447,11 @@ nav.main-nav ul li {
 nav.main-nav ul li.active-li {
   -webkit-box-shadow: 0 0 8px 2px white;
           box-shadow: 0 0 8px 2px white;
+}
+
+nav.main-nav ul li:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 div.burger-menu {
@@ -410,6 +488,7 @@ div.burger-menu i.fa-bars {
   font-size: 6vh;
   margin-left: 3vh;
   color: #eee;
+  cursor: pointer;
 }
 
 div.burger-menu nav.burger-nav ul {
@@ -423,11 +502,19 @@ div.burger-menu nav.burger-nav ul li {
   margin-bottom: 2vh;
   color: white;
   font-size: 2.7vh;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
 }
 
 div.burger-menu nav.burger-nav ul li.active-li {
   -webkit-box-shadow: 0 0 8px 2px white;
           box-shadow: 0 0 8px 2px white;
+}
+
+div.burger-menu nav.burger-nav ul li:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 @-webkit-keyframes shakebtn {
@@ -555,6 +642,25 @@ div.burger-menu nav.burger-nav ul li.active-li {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1025px) {
+  #phonebtn {
+    display: none;
+  }
+  nav.main-nav {
+    opacity: 1 !important;
+    max-width: 1200px;
+    top: 23%;
+    height: 7%;
+  }
+  nav.main-nav ul li {
+    padding: 1vh;
+    font-size: 15px;
+  }
+  div.burger-menu {
+    display: none;
+  }
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -605,6 +711,10 @@ footer p a {
   user-select: none;
 }
 
+footer p a:hover {
+  color: #0e76a8;
+}
+
 footer div#attribution {
   color: white;
   font-size: 1vh;
@@ -631,6 +741,21 @@ footer div#attribution a {
   }
   footer div#attribution {
     font-size: .8vw;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+  footer h2 {
+    font-size: 1.5vh;
+  }
+  footer p {
+    font-size: 1.5vh;
+  }
+  footer p i {
+    font-size: 1.5vh;
+  }
+  footer div#attribution {
+    font-size: 1.5vh;
   }
 }
 
@@ -690,6 +815,22 @@ section.about-me div.about-me-wrapper div.about p {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1025px) {
+  section.about-me div.about-me-wrapper {
+    width: 100%;
+  }
+  section.about-me div.about-me-wrapper h2 {
+    font-size: 20px;
+  }
+  section.about-me div.about-me-wrapper div.about a img {
+    height: 200px;
+  }
+  section.about-me div.about-me-wrapper div.about p {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
 section.gallery div.gallery-wrapper {
   width: 80%;
 }
@@ -731,8 +872,20 @@ section.gallery div.gallery-wrapper div.popup-gallery img {
 }
 
 @media (orientation: landscape) {
+  section.gallery div.gallery-wrapper {
+    width: 90%;
+  }
   section.gallery div.gallery-wrapper div.popup-gallery a {
     width: 22%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+  section.gallery div.gallery-wrapper {
+    width: 100%;
+  }
+  section.gallery div.gallery-wrapper div.popup-gallery a {
+    width: 23%;
   }
 }
 
@@ -760,6 +913,9 @@ section.services div.services-wrapper div.service p {
 }
 
 @media (orientation: landscape) {
+  section.services div.services-wrapper {
+    width: 90%;
+  }
   section.services div.services-wrapper h2 {
     font-size: 2.5vw;
     margin-bottom: 3vw;
@@ -786,6 +942,26 @@ section.services div.services-wrapper div.service p {
   }
   section.services div.services-wrapper div.service p {
     font-size: 2vw;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+  section.services div.services-wrapper {
+    width: 100%;
+  }
+  section.services div.services-wrapper h2 {
+    font-size: 20px;
+  }
+  section.services div.services-wrapper div.service {
+    margin-left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  section.services div.services-wrapper div.service img {
+    height: 15px;
+  }
+  section.services div.services-wrapper div.service p {
+    font-size: 15px;
   }
 }
 
@@ -966,7 +1142,16 @@ section.contact div.contact-wrapper form div#form-status img {
   margin-right: 1vh;
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 200px) {
+  section.contact.active-page {
+    height: 100%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 500px) {
+  section.contact div.contact-wrapper {
+    width: 90%;
+  }
   section.contact div.contact-wrapper h2 {
     font-size: 2.5vw;
     margin-bottom: 2vw;
@@ -987,15 +1172,6 @@ section.contact div.contact-wrapper form div#form-status img {
     margin-left: 1vw;
     font-size: 2vw;
   }
-}
-
-@media (orientation: landscape) and (max-height: 200px) {
-  section.contact.active-page {
-    height: 100%;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 500px) {
   section.contact div.contact-wrapper form {
     width: 60%;
   }
@@ -1031,6 +1207,51 @@ section.contact div.contact-wrapper form div#form-status img {
   }
 }
 
+@media (orientation: landscape) and (min-width: 1025px) {
+  section.contact div.contact-wrapper {
+    width: 100%;
+  }
+  section.contact div.contact-wrapper h2 {
+    font-size: 20px;
+  }
+  section.contact div.contact-wrapper div.socials a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.contact div.contact-wrapper div.socials a img {
+    height: 20px;
+  }
+  section.contact div.contact-wrapper div.socials a p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  section.contact div.contact-wrapper form {
+    width: 60%;
+  }
+  section.contact div.contact-wrapper form label {
+    font-size: 20px;
+  }
+  section.contact div.contact-wrapper form label.form-checkbox {
+    font-size: 20px;
+  }
+  section.contact div.contact-wrapper form label input {
+    font-size: 20px;
+  }
+  section.contact div.contact-wrapper form label textarea {
+    font-size: 20px;
+  }
+  section.contact div.contact-wrapper form button#form-submit {
+    font-size: 25px;
+  }
+  section.contact div.contact-wrapper form div#form-status {
+    font-size: 20px;
+  }
+  section.contact div.contact-wrapper form div#form-status img {
+    height: 20px;
+  }
+}
+
 section.open-hours div.open-hours-wrapper {
   width: 80%;
   height: 100%;
@@ -1059,6 +1280,15 @@ section.open-hours div.open-hours-wrapper iframe {
   section.open-hours div.open-hours-wrapper p {
     font-size: 2vw;
     margin: 0 0 2vw;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+  section.open-hours div.open-hours-wrapper {
+    width: 100%;
+  }
+  section.open-hours div.open-hours-wrapper p {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -34,3 +34,14 @@ section.open-hours {
     }
   }
 }
+
+@media (orientation: landscape) and (min-width:1025px) {
+  section.open-hours {
+    div.open-hours-wrapper {
+      width: 100%;
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

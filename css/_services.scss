@@ -4,7 +4,6 @@ section.services {
 
     h2 {
       font-size: 2.5vh;
-      // margin-bottom: 3vh;
     }
 
     h2:nth-of-type(2) {
@@ -28,6 +27,7 @@ section.services {
 @media (orientation: landscape) {
   section.services {
     div.services-wrapper {
+      width: 90%;
       h2 {
         font-size: 2.5vw;
         margin-bottom: 3vw;
@@ -49,6 +49,29 @@ section.services {
 
         p {
           font-size: 2vw;
+        }
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px){
+  section.services {
+    div.services-wrapper {
+      width: 100%;
+      h2 {
+        font-size: 20px;
+      }
+
+      div.service {
+        margin-left: 50%;
+        transform: translate(-50%);
+        img {
+          height: 15px;
+        }
+
+        p {
+          font-size: 15px;
         }
       }
     }

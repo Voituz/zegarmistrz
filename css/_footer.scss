@@ -32,6 +32,9 @@ footer {
       color: white;
       text-decoration: none;
       @include hightlight-off;
+      &:hover {
+        color: #0e76a8;
+      }
     }
   }
   div#attribution {
@@ -62,6 +65,26 @@ footer {
     }
     div#attribution {
       font-size: .8vw;
+    }
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px){
+  footer {
+
+    h2 {
+      font-size: 1.5vh;
+    }
+
+    p {
+      font-size: 1.5vh;
+
+      i {
+        font-size: 1.5vh;
+      }
+    }
+    div#attribution {
+      font-size: 1.5vh;
     }
   }
 }

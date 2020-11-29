@@ -1,5 +1,5 @@
 #phonebtn {
-  position: absolute;
+  position: fixed;
   top: 35%;
   left: 50%;
   transform: translate(-50%);
@@ -26,7 +26,7 @@
 
 
 nav.main-nav {
-  position: absolute;
+  position: fixed;
   top: 45%;
   left: 50%;
   transform: translate(-50%);
@@ -55,10 +55,15 @@ nav.main-nav {
       padding: 1.2vh;
       border-radius: 5px;
       box-shadow: 0 0 8px 2px rgba(0, 0, 0, .6);
+      cursor: pointer;
       transition: .3s;
 
       &.active-li {
         box-shadow: 0 0 8px 2px white;
+      }
+
+      &:hover {
+        filter: brightness(.7);
       }
     }
   }
@@ -92,6 +97,7 @@ div.burger-menu {
     font-size: 6vh;
     margin-left: 3vh;
     color: #eee;
+    cursor: pointer;
   }
 
   nav.burger-nav {
@@ -105,9 +111,14 @@ div.burger-menu {
         margin-bottom: 2vh;
         color: white;
         font-size: 2.7vh;
+        transition: .3s;
+        cursor: pointer;
 
         &.active-li {
           box-shadow: 0 0 8px 2px white;
+        }
+        &:hover {
+          filter: brightness(.7);
         }
       }
     }
@@ -206,5 +217,29 @@ div.burger-menu {
         }
       }
     }
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+  #phonebtn {
+    display: none;
+  }
+
+  nav.main-nav {
+    opacity: 1 !important;
+    max-width: 1200px;
+    top: 23%;
+    height: 7%;
+
+    ul {
+      li {
+        padding: 1vh;
+        font-size: 15px;
+      }
+    }
+  }
+
+  div.burger-menu {
+    display: none;
   }
 }

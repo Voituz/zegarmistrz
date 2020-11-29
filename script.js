@@ -1,3 +1,37 @@
+// Magnific gallery
+$(document).ready(function () {
+
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Ładowanie... #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1]
+    },
+    image: {
+      tError: '<a href="%url%">Obraz #%curr%</a> nie mógł się załadować.',
+    }
+  });
+
+  $('.image-popup').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom',
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: false,
+      duration: 300
+    }
+  });
+});
+
 // page functionality elements
 const pages = [...document.querySelectorAll('.page')];
 const liList = [...document.querySelectorAll('nav.main-nav ul li')];

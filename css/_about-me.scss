@@ -59,3 +59,28 @@ section.about-me {
     }
   }
 }
+
+@media (orientation: landscape) and (min-width: 1025px) {
+  section.about-me {
+    div.about-me-wrapper {
+      width: 100%;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      div.about {
+        a {
+          img {
+            height: 200px;
+          }
+        }
+
+        p {
+          font-size: 15px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -30,9 +30,23 @@ section.gallery {
 @media (orientation: landscape) {
   section.gallery {
     div.gallery-wrapper {
+      width: 90%;
       div.popup-gallery {
         a {
           width: 22%
+        }
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1025px){
+  section.gallery {
+    div.gallery-wrapper {
+      width: 100%;
+      div.popup-gallery {
+        a {
+          width: 23%
         }
       }
     }

@@ -20,6 +20,7 @@ header {
     background-color: rgba(0, 0, 0, .95);
     color: white;
     box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, .95);
+    cursor: pointer;
 
     h1 {
       padding-top: 3vh;
@@ -77,6 +78,41 @@ header {
   }
 }
 
+@media (orientation: landscape) and (max-height:200px) {
+  header {
+    div.hero {
+      display: none;
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1000px) {
+  header {
+    img {
+      &.gear1 {
+        height: 315px;
+        top: -75px;
+        left: -74px;
+        animation: rotate 15s infinite linear;
+      }
+
+      &.gear2 {
+        height: 315px;
+        top: 255px;
+        left: 270px;
+        animation: rotate 16s infinite linear;
+      }
+
+      &.gear3 {
+        height: 255px;
+        top: 160px;
+        left: 75px;
+        animation: rotate 13s reverse infinite linear;
+      }
+    }
+  }
+}
+
 @media (orientation:landscape) and (min-width: 500px) {
   header {
     background-image: url(../imgs/outfit/bg1600land.jpg);
@@ -95,39 +131,45 @@ header {
       }
     }
   }
+}
 
-  @media (orientation: landscape) and (max-height:200px) {
-    header {
-      div.hero {
-        display: none;
+@media (orientation:landscape) and (min-width: 1025px) {
+  header {
+    div.hero {
+      position: absolute;
+      height: 20%;
+      h1 {
+        font-size: 5vh;
+      }
+
+      h2 {
+        font-size: 4vh;
+      }
+
+      h3 {
+        font-size: 3vh;
       }
     }
-  }
-
-  @media (orientation: landscape) and (max-width: 1000px) {
-    header {
-      img {
-        &.gear1 {
-          height: 315px;
-          top: -75px;
-          left: -74px;
-          animation: rotate 15s infinite linear;
-        }
-
-        &.gear2 {
-          height: 315px;
-          top: 255px;
-          left: 270px;
-          animation: rotate 16s infinite linear;
-        }
-
-        &.gear3 {
-          height: 255px;
-          top: 160px;
-          left: 75px;
-          animation: rotate 13s reverse infinite linear;
-
-        }
+    img {
+      &.gear1 {
+        height: 220px;
+        top: 160px;
+        left: -50px;
+        animation: rotate 15s infinite linear;
+      }
+  
+      &.gear2 {
+        height: 220px;
+        top: 405px;
+        left: -72px;
+        animation: rotate 16s infinite linear;
+      }
+  
+      &.gear3 {
+        height: 170px;
+        top: 313px;
+        left: 72px;
+        animation: rotate 13s reverse infinite linear;
       }
     }
   }
