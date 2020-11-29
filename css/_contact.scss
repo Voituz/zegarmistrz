@@ -20,12 +20,12 @@ section.contact {
 
       a {
         text-decoration: none;
-        margin: 1vh 0;
+        margin: 2vh 0;
         background-color: rgba(0, 0, 0, .7);
         box-shadow: 0 0 6px 6px black;
 
         img {
-          height: 2vh;
+          height: 2.5vh;
         }
 
         p {
@@ -60,6 +60,7 @@ section.contact {
 
           #form-checkbox {
             margin-right: 5px;
+            cursor: pointer;
 
             &:focus {
               box-shadow: none;
@@ -125,6 +126,7 @@ section.contact {
         padding: 1vh;
         border: 1px solid white;
         box-shadow: 3px 3px 0 0 #aaa;
+        cursor: pointer;
 
         &:active {
           transform: translate(3px, 3px);
@@ -171,6 +173,7 @@ section.contact {
       div.socials {
         a {
           display: flex;
+          margin-bottom: 1vw;
 
           img {
             height: 2.5vw;

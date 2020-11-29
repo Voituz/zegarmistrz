@@ -440,6 +440,11 @@ nav.main-nav ul li {
   -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -505,6 +510,11 @@ div.burger-menu nav.burger-nav ul li {
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 div.burger-menu nav.burger-nav ul li.active-li {
@@ -651,6 +661,7 @@ div.burger-menu nav.burger-nav ul li:hover {
     max-width: 1200px;
     top: 23%;
     height: 7%;
+    border-radius: 0;
   }
   nav.main-nav ul li {
     padding: 1vh;
@@ -1000,14 +1011,14 @@ section.contact div.contact-wrapper div.socials {
 
 section.contact div.contact-wrapper div.socials a {
   text-decoration: none;
-  margin: 1vh 0;
+  margin: 2vh 0;
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0 0 6px 6px black;
           box-shadow: 0 0 6px 6px black;
 }
 
 section.contact div.contact-wrapper div.socials a img {
-  height: 2vh;
+  height: 2.5vh;
 }
 
 section.contact div.contact-wrapper div.socials a p {
@@ -1053,6 +1064,7 @@ section.contact div.contact-wrapper form label.form-checkbox a {
 
 section.contact div.contact-wrapper form label.form-checkbox #form-checkbox {
   margin-right: 5px;
+  cursor: pointer;
 }
 
 section.contact div.contact-wrapper form label.form-checkbox #form-checkbox:focus {
@@ -1119,6 +1131,7 @@ section.contact div.contact-wrapper form button#form-submit {
   border: 1px solid white;
   -webkit-box-shadow: 3px 3px 0 0 #aaa;
           box-shadow: 3px 3px 0 0 #aaa;
+  cursor: pointer;
 }
 
 section.contact div.contact-wrapper form button#form-submit:active {
@@ -1163,6 +1176,7 @@ section.contact div.contact-wrapper form div#form-status img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 1vw;
   }
   section.contact div.contact-wrapper div.socials a img {
     height: 2.5vw;

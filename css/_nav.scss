@@ -56,6 +56,7 @@ nav.main-nav {
       border-radius: 5px;
       box-shadow: 0 0 8px 2px rgba(0, 0, 0, .6);
       cursor: pointer;
+      @include hightlight-off;
       transition: .3s;
 
       &.active-li {
@@ -113,6 +114,7 @@ div.burger-menu {
         font-size: 2.7vh;
         transition: .3s;
         cursor: pointer;
+        @include hightlight-off;
 
         &.active-li {
           box-shadow: 0 0 8px 2px white;
@@ -230,6 +232,7 @@ div.burger-menu {
     max-width: 1200px;
     top: 23%;
     height: 7%;
+    border-radius: 0;
 
     ul {
       li {
