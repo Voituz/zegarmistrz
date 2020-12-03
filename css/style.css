@@ -771,13 +771,13 @@ div.burger-menu nav.burger-nav a#advert-nav div.advwrap h2 {
     font-size: 2vw;
   }
   div.burger-menu nav.burger-nav a#advert-nav div.advwrap {
-    padding: 1vw 4vw 1vw;
+    padding: .5vw 3vw .5vw;
   }
   div.burger-menu nav.burger-nav a#advert-nav div.advwrap div.advimg img {
-    height: 3vw;
+    height: 2vw;
   }
   div.burger-menu nav.burger-nav a#advert-nav div.advwrap h2 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
 }
 
