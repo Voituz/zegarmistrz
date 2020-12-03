@@ -21,6 +21,7 @@ header {
     color: white;
     box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, .95);
     cursor: pointer;
+    @include hightlight-off;
 
     h1 {
       padding-top: 3vh;

@@ -64,7 +64,7 @@ nav.main-nav {
       }
 
       &:hover {
-        filter: brightness(.7);
+        box-shadow: 0 0 8px 2px white;
       }
     }
   }
@@ -73,13 +73,14 @@ nav.main-nav {
 div.burger-menu {
   position: fixed;
   overflow: hidden;
-  top: 23%;
+  top: 22%;
   right: -30vh;
   width: 20vh;
-  height: 7vh;
+  height: 8vh;
+  padding-top: 1vh;
   z-index: 5;
   background-color: rgba(0, 0, 0, .95);
-  border-radius: 4px;
+  border-radius: 10px;
   transition: .7s;
 
   &.burger-menu-active {
@@ -99,6 +100,7 @@ div.burger-menu {
     margin-left: 3vh;
     color: #eee;
     cursor: pointer;
+    @include hightlight-off;
   }
 
   nav.burger-nav {
@@ -113,14 +115,48 @@ div.burger-menu {
         color: white;
         font-size: 2.7vh;
         transition: .3s;
+        letter-spacing: 1px;
         cursor: pointer;
         @include hightlight-off;
 
         &.active-li {
           box-shadow: 0 0 8px 2px white;
+          background-color: #eee;
+          color: #222;
         }
         &:hover {
-          filter: brightness(.7);
+          box-shadow: 0 0 8px 2px white;
+        }
+      }
+    }
+    a#advert-nav {
+      color: #eee;
+      text-decoration: none;
+      transition: .7s;
+
+      &:hover div.advwrap {
+        background-color: #eee;
+        color: #333;
+      }
+
+      div.advwrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 4vh 1vh 2vh;
+        margin-top: 4vh;
+        transition: .3s;
+
+        div.advimg {
+          img {
+            height: 5vh;
+          }
+        }
+
+        h2 {
+          margin-top: 1vh;
+          font-size: 2vh;
         }
       }
     }
@@ -216,6 +252,20 @@ div.burger-menu {
       ul {
         li {
           font-size: 2vw;
+        }
+      }
+      a#advert-nav {
+        div.advwrap {
+          padding: 4vw 4vw 2vw;
+          div.advimg {
+            img {
+              height: 3vw;
+            }
+          }
+
+          h2 {
+            font-size: 1.5vw;
+          }
         }
       }
     }

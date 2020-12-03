@@ -40,6 +40,7 @@ const burgerMenu = document.querySelector('i.fa-bars');
 const divBurger = document.querySelector('div.burger-menu');
 const closeBtns = [...document.querySelectorAll('button.close')];
 const baner = document.querySelector('header')
+const advertDesktop = document.querySelector('a#advert')
 // contact-form
 const name = document.querySelector('#form-name');
 const email = document.querySelector('#form-email');
@@ -60,6 +61,7 @@ const closePage = () => {
 
 const showBanerElements = function() {
   closeBtns.forEach((btn => {
+    advertDesktop.style.opacity = '1';
     document.getElementById('phonebtn').style.opacity = '1';
     document.querySelector('.main-nav').style.opacity = '1';
     document.querySelector('footer').style.opacity = '1';
@@ -70,6 +72,7 @@ const showBanerElements = function() {
 }
 
 const showMenuPage = function (li, liIndex) {
+    advertDesktop.style.opacity = '0';
     document.getElementById('phonebtn').style.opacity = '0';
     document.querySelector('.main-nav').style.opacity = '0';
     document.querySelector('footer').style.opacity = '0';

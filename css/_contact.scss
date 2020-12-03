@@ -23,6 +23,7 @@ section.contact {
         margin: 2vh 0;
         background-color: rgba(0, 0, 0, .7);
         box-shadow: 0 0 6px 6px black;
+        @include hightlight-off;
 
         img {
           height: 2.5vh;

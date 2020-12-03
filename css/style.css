@@ -77,6 +77,10 @@
   margin-left: 1vh;
 }
 
+div.wrapper {
+  position: relative;
+}
+
 div.wrapper div.send-info {
   position: fixed;
   display: none;
@@ -111,6 +115,66 @@ div.wrapper div.send-info h1 img {
 
 div.wrapper div.send-info h2 {
   font-size: 2vh;
+}
+
+a#advert {
+  display: none;
+  position: absolute;
+  bottom: 12%;
+  right: 0;
+  color: #eee;
+  text-decoration: none;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+a#advert:hover div.advwrap {
+  background-color: #eee;
+  color: #333;
+}
+
+a#advert div.advwrap {
+  background-color: rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 150px;
+  width: 400px;
+  padding: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+a#advert div.advwrap div.advimg {
+  width: 120px;
+}
+
+a#advert div.advwrap div.advimg img {
+  height: 100%;
+}
+
+a#advert div.advwrap div.advtxt {
+  position: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+a#advert div.advwrap div.advtxt h2 {
+  font-size: 15px;
+}
+
+a#advert div.advwrap div.advtxt h3 {
+  font-size: 13px;
+  margin-top: 10px;
 }
 
 @-webkit-keyframes btnmove {
@@ -187,6 +251,9 @@ div.wrapper div.send-info h2 {
   body div.wrapper .close {
     display: none;
   }
+  body a#advert {
+    display: block;
+  }
 }
 
 header {
@@ -213,6 +280,11 @@ header div.hero {
   -webkit-box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, 0.95);
           box-shadow: 1px 10px 15px 10px rgba(0, 0, 0, 0.95);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 header div.hero h1 {
@@ -455,20 +527,21 @@ nav.main-nav ul li.active-li {
 }
 
 nav.main-nav ul li:hover {
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
+  -webkit-box-shadow: 0 0 8px 2px white;
+          box-shadow: 0 0 8px 2px white;
 }
 
 div.burger-menu {
   position: fixed;
   overflow: hidden;
-  top: 23%;
+  top: 22%;
   right: -30vh;
   width: 20vh;
-  height: 7vh;
+  height: 8vh;
+  padding-top: 1vh;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.95);
-  border-radius: 4px;
+  border-radius: 10px;
   -webkit-transition: .7s;
   transition: .7s;
 }
@@ -494,6 +567,11 @@ div.burger-menu i.fa-bars {
   margin-left: 3vh;
   color: #eee;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 div.burger-menu nav.burger-nav ul {
@@ -509,6 +587,7 @@ div.burger-menu nav.burger-nav ul li {
   font-size: 2.7vh;
   -webkit-transition: .3s;
   transition: .3s;
+  letter-spacing: 1px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
@@ -520,11 +599,52 @@ div.burger-menu nav.burger-nav ul li {
 div.burger-menu nav.burger-nav ul li.active-li {
   -webkit-box-shadow: 0 0 8px 2px white;
           box-shadow: 0 0 8px 2px white;
+  background-color: #eee;
+  color: #222;
 }
 
 div.burger-menu nav.burger-nav ul li:hover {
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
+  -webkit-box-shadow: 0 0 8px 2px white;
+          box-shadow: 0 0 8px 2px white;
+}
+
+div.burger-menu nav.burger-nav a#advert-nav {
+  color: #eee;
+  text-decoration: none;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+div.burger-menu nav.burger-nav a#advert-nav:hover div.advwrap {
+  background-color: #eee;
+  color: #333;
+}
+
+div.burger-menu nav.burger-nav a#advert-nav div.advwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 4vh 1vh 2vh;
+  margin-top: 4vh;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+div.burger-menu nav.burger-nav a#advert-nav div.advwrap div.advimg img {
+  height: 5vh;
+}
+
+div.burger-menu nav.burger-nav a#advert-nav div.advwrap h2 {
+  margin-top: 1vh;
+  font-size: 2vh;
 }
 
 @-webkit-keyframes shakebtn {
@@ -649,6 +769,15 @@ div.burger-menu nav.burger-nav ul li:hover {
   }
   div.burger-menu nav.burger-nav ul li {
     font-size: 2vw;
+  }
+  div.burger-menu nav.burger-nav a#advert-nav div.advwrap {
+    padding: 4vw 4vw 2vw;
+  }
+  div.burger-menu nav.burger-nav a#advert-nav div.advwrap div.advimg img {
+    height: 3vw;
+  }
+  div.burger-menu nav.burger-nav a#advert-nav div.advwrap h2 {
+    font-size: 1.5vw;
   }
 }
 
@@ -807,6 +936,41 @@ section.about-me div.about-me-wrapper div.about p {
   text-align: center;
 }
 
+section.about-me div.about-me-wrapper a#advert-aboutme {
+  color: #eee;
+  text-decoration: none;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+section.about-me div.about-me-wrapper a#advert-aboutme:hover div.advwrap {
+  background-color: #eee;
+  color: #333;
+}
+
+section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap {
+  background-color: rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4vh 0 2vh;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap div.advimg img {
+  height: 6vh;
+}
+
+section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap h2 {
+  margin-top: 2vh;
+  font-size: 2.5vh;
+}
+
 @media (orientation: landscape) {
   section.about-me div.about-me-wrapper {
     width: 90%;
@@ -824,6 +988,15 @@ section.about-me div.about-me-wrapper div.about p {
   section.about-me div.about-me-wrapper div.about p {
     font-size: 2vw;
   }
+  section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap {
+    padding: 4vw 0 2vw;
+  }
+  section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap div.advimg img {
+    height: 6vw;
+  }
+  section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap h2 {
+    font-size: 2.5vw;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 1025px) {
@@ -834,11 +1007,24 @@ section.about-me div.about-me-wrapper div.about p {
     font-size: 20px;
   }
   section.about-me div.about-me-wrapper div.about a img {
-    height: 200px;
+    height: 180px;
+    margin-bottom: 15px;
+    margin-right: 30px;
   }
   section.about-me div.about-me-wrapper div.about p {
     font-size: 15px;
     text-align: left;
+    margin-bottom: 15px;
+  }
+  section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap {
+    padding: 20px 0 10px;
+    height: 120px;
+  }
+  section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap div.advimg img {
+    height: 40px;
+  }
+  section.about-me div.about-me-wrapper a#advert-aboutme div.advwrap h2 {
+    font-size: 20px;
   }
 }
 
@@ -1015,6 +1201,11 @@ section.contact div.contact-wrapper div.socials a {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0 0 6px 6px black;
           box-shadow: 0 0 6px 6px black;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 section.contact div.contact-wrapper div.socials a img {
